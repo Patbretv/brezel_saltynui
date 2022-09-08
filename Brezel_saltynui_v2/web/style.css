@@ -1,0 +1,75 @@
+
+body {
+    transition: all linear;
+    animation-timing-function: linear;
+}
+
+#background {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+  
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#bar {
+    position: absolute;
+    width: 19.849146486701073vw;
+    height: 5.4221533694810224vh;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -95%);
+    animation: brezel-updown 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: rgba(60, 60, 60, 0.67);
+    border-radius: 12px;
+}
+
+#text1 {
+    text-align: center;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9527590313616514vw ;
+    line-height: 5.4221533694810224vh;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px #FFFFFF;
+}
+
+#text2 {
+    position: absolute;
+    left: 50%;
+    top: 87.5%;
+    transform: translate(-50%, -87.5%);
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #00BBFF;
+    animation: brezel-updown2 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-shadow: 0px 0px 19px #00BBFF;
+}
+
+@keyframes brezel-updown {
+    0% {top: 95%}
+    50% {top: 92.5%}
+    100% {top: 95%}
+}
+
+@keyframes brezel-updown2 {
+    0% {top: 87.5%}
+    50% {top: 85%}
+    100% {top: 87.5%}
+}
